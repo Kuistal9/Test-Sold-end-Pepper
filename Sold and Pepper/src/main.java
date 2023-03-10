@@ -1,4 +1,3 @@
-
 import org.xml.sax.SAXException;
 import javax.xml.parsers.*;
 import java.io.IOException;
@@ -8,7 +7,7 @@ import javax.xml.xpath.XPathExpressionException;
 
 public class main {
     public static void main(String[] args) throws IOException, SAXException, ParserConfigurationException, XMLStreamException, XPathExpressionException {
-menu.menu ();
+        menu.menu ();
     }
-    }
+}
 

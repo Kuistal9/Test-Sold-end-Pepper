@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <ToDoList>
         
-    <Task1 caption="Заголовок задачи" id="1">
+    <Task caption="Заголовок задачи" id="1">
                 
-        <Description>
-            Описание задачи
-            <paradigm>oop</paradigm>
-        </Description>
+        <Description1>Описание задач Я_в_окно</Description1>
                 
         <Priority>100</Priority>
                 
@@ -16,14 +13,11 @@
                 
         <Complete>2017-02-19</Complete>
             
-    </Task1>
+    </Task>
         
-    <Task2 caption="Заголовок еще одной задачи" id="2">
+    <Task caption="Заголовок еще одной задачи" id="2">
                 
-        <Description>
-            Описание еще одной задачи
-            <paradigm>oop</paradigm>
-        </Description>
+        <Description2>Описание еще одной задачи</Description2>
                 
         <Priority>10</Priority>
                 
@@ -31,6 +25,6 @@
                 
         <Status>new</Status>
             
-    </Task2>
+    </Task>
     
 </ToDoList>

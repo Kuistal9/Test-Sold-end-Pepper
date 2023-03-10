@@ -1,10 +1,9 @@
-
 import javax.xml.stream.*;
 import java.io.*;
 
 public class test {
 
-  public static void start () {
+    public static void start () {
 
         final String fileName = "src/task.xml";
 
@@ -17,14 +16,12 @@ public class test {
                 if (xmlReader.isStartElement ()) {
                     System.out.println ( xmlReader.getLocalName () );
                 }
-                // else if (xmlReader.hasText () && xmlReader.getText ().trim ().length () > 0) {
-                //  System.out.println ( " " + xmlReader.getText () );
-                //}
+
             }
         }
         catch (FileNotFoundException |  XMLStreamException ex  ) {
             ex.printStackTrace();  }
     }
 
-  }
+}
 
