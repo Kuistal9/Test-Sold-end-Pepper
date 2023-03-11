@@ -15,6 +15,7 @@ public class menu {
         System.out.println ("3.выход");
         Scanner sc = new Scanner(System.in);
         int number;
+
         do {
             System.out.println("Нужно положительное число!");
             while (!sc.hasNextInt()) {

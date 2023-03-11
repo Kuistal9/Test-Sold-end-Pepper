@@ -9,7 +9,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.xpath.XPathExpressionException;
-public class conclusion_choice extends conclusion {
+public class conclusion_choice {
     static void search_element(  ) throws ParserConfigurationException, SAXException, IOException, XPathExpressionException, XMLStreamException {
 
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
