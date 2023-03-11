@@ -9,12 +9,13 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.xpath.XPathExpressionException;
-public class test2 extends test   {
-    static void main() throws ParserConfigurationException, SAXException, IOException, XPathExpressionException, XMLStreamException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+public class conclusion_choice extends conclusion {
+    static void search_element(  ) throws ParserConfigurationException, SAXException, IOException, XPathExpressionException, XMLStreamException {
+
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
         Document document = builder.parse(new File("src/task.xml"));
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String element = reader.readLine();
         NodeList matchedElementsList = document.getElementsByTagName(element);
         if (matchedElementsList.getLength() == 0) {
@@ -27,7 +28,7 @@ public class test2 extends test   {
         }
         menu.menu ();
     }
-    private static void ChildNodes(NodeList list) {
+     static void ChildNodes(NodeList list) {
         for (int i = 0; i < list.getLength(); i++) {
             Node node = list.item(i);
             if (node.getNodeType() == Node.TEXT_NODE) {
@@ -45,4 +46,5 @@ public class test2 extends test   {
                 ChildNodes (node.getChildNodes());
         }
     }
+
 }
